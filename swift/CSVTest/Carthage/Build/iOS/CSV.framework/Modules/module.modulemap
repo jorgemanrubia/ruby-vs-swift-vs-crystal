@@ -1,3 +1,0 @@
-framework module CSV {
-    header "CSV-Swift.h"
-}
