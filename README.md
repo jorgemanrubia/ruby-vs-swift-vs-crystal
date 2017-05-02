@@ -14,6 +14,8 @@ I wasn’t able to find a good CSV parser for Swift. There is no official librar
 
 ## Run the tests
 
+Execute:
+
 ```
 bundle
 rake
