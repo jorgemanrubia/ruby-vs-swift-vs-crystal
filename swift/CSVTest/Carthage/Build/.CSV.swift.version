@@ -1,0 +1,27 @@
+{
+  "iOS" : [
+    {
+      "hash" : "f348052d55d4af40d8e9bcfccf92ce32a0aaffb6cb4475d8a6e48a9848ed3936",
+      "name" : "CSV"
+    }
+  ],
+  "commitish" : "1.1.2",
+  "watchOS" : [
+    {
+      "hash" : "76e8a13e3e5c39744769bd315172bbf3302eb6e276c7383a9ab4d2a56dbcbdd4",
+      "name" : "CSV"
+    }
+  ],
+  "tvOS" : [
+    {
+      "hash" : "3db055ab16fd3018f4fd0b06049f55cba0ac7c26d67e7b77d4bf99e91d391dd6",
+      "name" : "CSV"
+    }
+  ],
+  "Mac" : [
+    {
+      "hash" : "547a7efe6cbcdb2bf455c17a8670f3a36a6a3911f899f7641fe96d03dbd7a906",
+      "name" : "CSV"
+    }
+  ]
+}
