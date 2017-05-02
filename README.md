@@ -20,3 +20,7 @@ rake
 ```
 
 You can also run specific tests: `rake ruby:run`, `rake crystal:run` and `rake swift:run`.
+
+## See
+
+- [Article in my site](http://jorgemanrubia.com/2017/05/02/comparing-ruby-swift-and-crystal-for-processing-a-big-file/)
