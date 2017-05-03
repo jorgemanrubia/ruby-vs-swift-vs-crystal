@@ -1,5 +1,7 @@
 import Darwin
 
+//Extracted from http://stackoverflow.com/a/40855152/469697
+
 /// Reads text file line by line
 class StreamReader {
     let path: String
