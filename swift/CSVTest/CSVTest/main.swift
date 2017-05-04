@@ -8,9 +8,10 @@
 
 import Foundation
 
-var file = CommandLine.arguments[1]
+//var file = CommandLine.arguments[1]
+var file = "/Users/jorge/work/ruby-vs-swift-vs-crystal/data/data.csv"
 
-class Bar{
+struct Bar{
     var open: Double
     var close: Double
     var high: Double
@@ -24,9 +25,7 @@ class Bar{
     }
 }
 
-func readCsvAsBars(file: String) -> [Bar] {
-    var bars: [Bar] = []
-    
+func readCsvAsBars(file: String, into bars: inout [Bar]) {
     if let aStreamReader = StreamReader(path: file) {
         while let line = aStreamReader.nextLine {
             let row =  line.components(separatedBy: ",")
@@ -37,11 +36,9 @@ func readCsvAsBars(file: String) -> [Bar] {
             bars.append(Bar(open: open, high: high, low: low, close: close))
         }
     }
-    
-    return bars
 }
 
-func calculateAverageOf(bars: [Bar]) -> Double{
+func calculateAverageCloseOf(bars: inout [Bar]) -> Double{
     var total: Double = 0.0
     for bar in bars{
         total += bar.close
@@ -49,7 +46,9 @@ func calculateAverageOf(bars: [Bar]) -> Double{
     return total / Double(bars.count)
 }
 
-let result = calculateAverageOf(bars: readCsvAsBars(file: file))
+var bars: [Bar] = []
+readCsvAsBars(file: file, into: &bars)
+let result = calculateAverageCloseOf(bars: &bars)
 
 print(result)
 
