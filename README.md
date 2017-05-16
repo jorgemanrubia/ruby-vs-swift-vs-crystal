@@ -2,7 +2,7 @@
 
 This test processes a big CSV file (~4MB) that contains stock data. First, the test will transform this data into a list of bar objects. And then, it will loop through all the bars and calculate the average close price.
 
-I wasn’t able to find a good CSV parser for Swift. There is no official library for it, and the open source solutions I tried were surprisingly slow. Instead, the test just loops through the file lines and split them using *comma* as a delimiter. I used the same approach for Swift, Crystal and Ruby, despite of both Crystal and Ruby featuring official (and fast) CSV libraries. In the three cases it processes the file in *streaming* (without loading the full contents into memory).
+I wasn’t able to find a good CSV parser for Swift. There is no official library for it, and the open source solutions I tried were surprisingly slow. Instead, the test just loops through the file lines and split them using *comma* as a delimiter. I used the same approach for Swift, Crystal and Ruby, despite of both Crystal and Ruby featuring official (and fast) CSV libraries. In the three cases it processes the file in streaming, without loading its full content into memory.
 
 ## Results
 
